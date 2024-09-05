@@ -2,6 +2,9 @@ html{
     margin: 0;
     background: #EAEAE3;
 }
+body{
+    margin: 0;
+}
 
 /* FOOTER */
 
@@ -159,3 +162,7 @@ footer h6 {
         align-items: center;
     }
 }
+
+
+/* Deportes */
+
