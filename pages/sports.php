@@ -87,7 +87,6 @@ $sportData = [
             ['name' => 'De Chuecos', 'class' => '4B', 'flag' => './imagenes/flags/4b.webp'],
             ['name' => 'Pituquita Junior', 'class' => '4C', 'flag' => './imagenes/flags/4c.webp'],
             ['name' => 'Gladiadoras', 'class' => '4C', 'flag' => './imagenes/flags/4c.webp'],
-            ['name' => 'Los Ganadores', 'class' => '5A', 'flag' => './imagenes/flags/5a.webp'],
             ['name' => 'Barela Juniors', 'class' => '5B', 'flag' => './imagenes/flags/5b.webp'],
             ['name' => '9 de Oro', 'class' => '6A', 'flag' => './imagenes/flags/6.webp'],
             ['name' => 'Los Meeps', 'class' => '6B', 'flag' => './imagenes/flags/6.webp'],
