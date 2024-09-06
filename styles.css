@@ -1,9 +1,8 @@
-html{
+html, body {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     background: #EAEAE3;
-}
-body{
-    margin: 0;
 }
 
 /* FOOTER */
@@ -11,7 +10,7 @@ body{
 footer {
     margin: 0;
     margin-top: 10px;
-    width: 100vw;
+    width: 100%;
     padding: 35px;
     background-color: #000;
     color: #8d8d8d;
@@ -21,7 +20,7 @@ footer {
 }
 
 .Fgeneral {
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
@@ -166,3 +165,51 @@ footer h6 {
 
 /* Deportes */
 
+#deporte{
+    text-align: center;
+    text-transform: uppercase;
+    color: #b43c4e;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.dep_div{
+    background-color: #ace8ff;
+    height: 3px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    gap: 20px; /* Ajusta el espacio entre elementos si es necesario */
+}
+
+.dep_team {
+    text-align: center;
+    padding: 10px;
+}
+
+.dep_team img {
+    max-width: 100px;
+    height: auto;
+}
+
+.dep_team_name, .dep_team_curso {
+    text-transform:capitalize;
+    margin: 5px 0;
+}
+
+.dep_team img{
+    width: 100px;
+    height: 65px;
+}
+
+.dep_ciclo{
+    text-align: center;
+    text-transform: capitalize;
+    color: #8c659d;
+    font-weight: bold;
+}
