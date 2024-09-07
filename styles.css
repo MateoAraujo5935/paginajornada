@@ -190,8 +190,17 @@ footer h6 {
 .dep_team {
     text-align: center;
     padding: 10px;
+    
+}
+.dep_teams{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.dep_teams a{
+    text-decoration: none;
+    color: #000;
+}
 .dep_team img {
     max-width: 100px;
     height: auto;

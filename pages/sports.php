@@ -33,7 +33,7 @@ $sportData = [
             ['name' => 'Las sobras', 'class' => '6C', 'flag' => './imagenes/flags/6.webp']
         ],
         'format_desc_co' => 'notReady',
-        'fixture_co' => 'notReady'
+        'fixture_co' => 'https://challonge.com/es/6tv2w9m5/module'
     ],
 
     'football_female' => [
@@ -51,7 +51,7 @@ $sportData = [
             ['name' => 'Deportivas Rusticas', 'class' => '3C', 'flag' => './imagenes/flags/3c.webp'],
         ],
         'format_desc_cb' => 'notReady',
-        'fixture_cb' => 'notReady',
+        'fixture_cb' => 'https://challonge.com/es/f0rfpvo2/module',
 
         'teamsCO' => [
             ['name' => 'No sé FC', 'class' => '4A', 'flag' => './imagenes/flags/4a.webp'],
@@ -171,13 +171,16 @@ $filas= ceil($cantidadEquipos/$columnas);
     <div class="dep_div"></div>
     
     <h3 class="dep_ciclo">(Ciclo Básico)</h3>
-    <div class="dep_team container">
+    
+    <div class="dep_teams container">
         <?php foreach ($sportData['teamsCB'] as $team): ?>
+            <a href="">
             <div class="dep_team" style="">
                 <img src="<?php echo $team['flag']; ?>" alt="país">
                 <p class="dep_team_name"><?php echo $team['name']; ?></p>
                 <p class="dep_team_curso">(<?php echo $team['class']; ?>)</p>
             </div>
+            </a>
         <?php endforeach; ?>
     </div>
 
@@ -190,11 +193,13 @@ $filas= ceil($cantidadEquipos/$columnas);
     <h3 class="dep_ciclo">(Ciclo Orientado)</h3>
     <div class="dep_teams container">
     <?php foreach ($sportData['teamsCO'] as $team): ?>
+        <a href="">
         <div class="dep_team">
             <img src="<?php echo $team['flag']; ?>" alt="país">
             <p class="dep_team_name"><?php echo $team['name']; ?></p>
             <p class="dep_team_curso">(<?php echo $team['class']; ?>)</p>
         </div>
+        </a>
     <?php endforeach; ?>
 </div>
     <p class="info_torneo"><?php echo $sportData['format_desc_co']; ?></p>
