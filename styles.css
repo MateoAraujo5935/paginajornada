@@ -5,6 +5,57 @@ html, body {
     background: #EAEAE3;
 }
 
+/*Header*/
+
+header img{
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    background-color: #000 !important;
+    border-bottom: 5px solid #ace8ff;
+    border-top: 5px solid #ace8ff;
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+
+.nav-link.show{
+    color: #8c659d !important;
+}
+
+.navbar a{
+    color: white;
+    
+}
+
+.navbar a:hover{
+    color: #8c659d !important;
+}
+
+
+.dropdown-menu{
+    background-color: #000 !important;
+    border: 1px solid #ace8ff;
+}
+
+.dropdown-divider{
+    background-color: #ace8ff81 !important;
+}
+
+/* HOME */
+
+
+
+
+
 /* FOOTER */
 
 footer {
@@ -181,26 +232,24 @@ footer h6 {
     margin: 10px 0;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
-    gap: 20px; /* Ajusta el espacio entre elementos si es necesario */
-}
-
 .dep_team {
     text-align: center;
     padding: 10px;
-    
 }
+
 .dep_teams{
     margin-top: 20px;
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    gap: 20px; /* Ajusta el espacio entre elementos si es necesario */
 }
 
 .dep_teams a{
     text-decoration: none;
     color: #000;
 }
+
 .dep_team img {
     max-width: 100px;
     height: auto;
@@ -222,3 +271,94 @@ footer h6 {
     color: #8c659d;
     font-weight: bold;
 }
+
+/* Media Queries para hacer el sitio responsive */
+
+/* Pantallas medianas (tablets y dispositivos medianos) */
+@media (max-width: 1024px) {
+    #deporte {
+        font-size: 2.5rem;
+    }
+    .dep_teams {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en lugar de 4 */
+    }
+}
+
+/* Pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 768px) {
+    #deporte {
+        font-size: 2rem;
+    }
+    .dep_teams {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en lugar de 4 */
+    }
+    .dep_team img {
+        width: 80px; /* Ajustamos el tamaño de las imágenes para pantallas pequeñas */
+        height: auto;
+    }
+}
+
+/* Pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+    #deporte {
+        font-size: 1.5rem;
+    }
+    .dep_teams {
+        grid-template-columns: repeat(2,1fr); /* 1 columna en lugar de varias */
+    }
+    .dep_team img {
+        width: 60px; /* Reducimos más el tamaño de las imágenes */
+        height: auto;
+    }
+}
+
+
+/* MAIN PAGE */
+
+h2{
+    text-align: center;
+    font-weight: bold !important;
+}
+
+/* Slider */
+
+
+/* Normas */ 
+
+.circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Colores personalizados */
+  .purple-circle {
+    background-color: purple;
+    color: white;
+  }
+
+  .blue-circle {
+    background-color: lightblue;
+    color: black;
+  }
+
+  .red-circle {
+    background-color: brown;
+    color: white;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .circle {
+      width: 350px;
+      height: 350px;
+      font-size: 1,5rem;
+    }
+  }
+
